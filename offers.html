@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amorgos Rooms</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(to bottom, #e8f5e9, #ffffff);
+            color: #333;
+            background-image: url(beach.jpg);
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 5px 0 10px;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        .search-bar {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .search-bar select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .search-bar button {
+            background-color: #81c784;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #66bb6a;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 180px);
+            background-image: url('https://source.unsplash.com/1600x900/?green,hotel');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            background: rgba(46, 125, 50, 0.8);
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+
+        .hero h2 {
+            font-size: 2.8em;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            margin: 15px 0;
+        }
+
+        .hero button {
+            background-color: #81c784;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .hero button:hover {
+            background-color: #66bb6a;
+            transform: scale(1.05);
+        }
+
+        .offers {
+            padding: 20px;
+            text-align: center;
+            background-color: #f7fff7;
+        }
+
+        .offers h3 {
+            font-size: 2em;
+            color: #2e7d32;
+        }
+
+        .offer {
+            display: inline-block;
+            width: 300px;
+            margin: 15px;
+            padding: 15px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .offer img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .offer h4 {
+            margin: 10px 0;
+            color: #2e7d32;
+        }
+
+        .offer p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Green Paradise Hotels</h1>
+        <p>Experience tranquility and nature-inspired luxury</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for hotels or locations">
+            <select>
+                <option value="">Select area</option>
+                <option value="katapola">Katapola</option>
+                <option value="aegiali">Aegiali</option>
+                <option value="chora">Chora</option>
+            </select>
+            <button>Search</button>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Relax. Reconnect. Recharge.</h2>
+            <p>Book your stay in harmony with nature and modern elegance.</p>
+            <button onclick="location.href='booking.html';">Book Now</button>
+        </div>
+    </div>
+
+    <div class="offers">
+        <h3>Special Offers</h3>
+        <div class="offer">
+            <img src="offer1.jpg" alt="Offer 1">
+            <h4>Luxury Suite in Katapola</h4>
+            <p>Price: €150/night</p>
+            <p>Description: Enjoy a luxurious stay with sea views and premium amenities.</p>
+        </div>
+        <div class="offer">
+            <img src="anatoli.jpg" alt="Offer 2">
+            <h4>Beachfront Room in Aegiali</h4>
+            <p>Price: €120/night</p>
+            <p>Description: Relax by the beach with direct access to the crystal-clear waters.</p>
+        </div>
+        <div class="offer">
+            <img src="beach.jpg" alt="Offer 3">
+            <h4>Traditional Stay in Chora</h4>
+            <p>Price: €90/night</p>
+            <p>Description: Experience the charm of Amorgos with a cozy, traditional room.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Amorgos Rooms. All rights reserved.</p>
+    </footer>
+</body>
+</html>
